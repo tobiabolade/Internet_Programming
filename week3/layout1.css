@@ -23,9 +23,10 @@ nav{
 }
 
 li {
-    display: inline;
+    width: 30%;
+    
     float:left;
-    padding: 20px;
+   
 }
 main{
     background-color: green;
