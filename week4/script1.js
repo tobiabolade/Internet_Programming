@@ -5,4 +5,4 @@ function contentChange(){
     element1.firstChild.nodeValue= 'New Page Content';
 }
 
-document.addEventListener('DOMContentLoaded', contentChange);
+document.addEventListener('click', contentChange);
