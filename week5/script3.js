@@ -4,13 +4,13 @@ function clickFunction(){
     element1.style.left = positionLeft - 10 + 'px';
     
 }
-//function myKeyCode(event){
-  //  console.log(event.
-//}
+function myKeyCode(event){
+    console.log(event.keyCode);
+}
 
 function myLoadFunction(){
     var element1 = document.getElementById('circle');
-    element1.addEventListener('keydown', clickFunction);
+    element1.addEventListener('keydown', myKeyCode);
     
     
 }
