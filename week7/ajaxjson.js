@@ -20,8 +20,8 @@ function makeAjaxRequest(){
 }
 
 function showContents(){
-    if (xhr.readyState == 4) {
-        if (xhr.status == 200){
+    if (xhRequest.readyState == 4) {
+        if (xhRequest.status == 200){
             let data = JSON.parse(xhr.responseText);
             let txt = "";
             for (let i=0; i<data.counties.length; i++){
@@ -34,3 +34,4 @@ function showContents(){
      }
  }
     
+//document.addEventListener('DOMContentLoaded', makeAjaxRequest);
