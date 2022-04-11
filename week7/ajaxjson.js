@@ -34,4 +34,3 @@ function showContents(){
      }
  }
     
-//document.addEventListener('DOMContentLoaded', makeAjaxRequest);
