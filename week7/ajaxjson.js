@@ -1,3 +1,5 @@
+window.onload = makeAjaxRequest;
+
 function makeAjaxRequest(){
     if (window.XMLHttpRequest){
         xhr = new XMLHttpRequest();
@@ -15,13 +17,13 @@ function makeAjaxRequest(){
         xhr.onreadystatechange = showContents;
     }
     else {
-        document.getElementById("updatemessage").innerHTML = "Could not perform stated request"
+        document.getElementById("updatemessage").innerHTML = "Could not perform stated request";
     }
 }
 
 function showContents(){
-    if (xhRequest.readyState == 4) {
-        if (xhRequest.status == 200){
+    if (xhr.readyState == 4) {
+        if (xhr.status == 200){
             let data = JSON.parse(xhr.responseText);
             let txt = "";
             for (let i=0; i<data.counties.length; i++){
