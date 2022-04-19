@@ -4,7 +4,7 @@ $(document).ready(function() {
         let movie = $(this).val();
         let apiUrl = "https:api.themoviedb.org/3/movie"
         + movie
-        +"?api_key=44a0cdc96f987136ea05e492606cc571&language=en-US";
+        +"?api_key=fe9b2191c7d9911dbb7c85c521cd94c7&language=en-US";
         $.ajax( {
             url:apiUrl,
             type: "GET",
